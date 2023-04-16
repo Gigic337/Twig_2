@@ -14,19 +14,8 @@
 
 <body>
 {% block content %}
+    {% include 'component/_navbar.html.twig' %}
 
-    <nav>
-        {% block navbar %}
-            <ul>
-                {% block inner_navbar %}
-                <li>Home</li>
-                <li>About us</li>
-                <li>Features</li>
-                {% endblock inner_navbar %}
-            </ul>
-
-        {% endblock navbar %}
-    </nav>
 
 
 {% endblock %}
